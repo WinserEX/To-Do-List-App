@@ -1,0 +1,12 @@
+<div class="task">
+    <h3>
+        {{task.text}}
+        <b>
+            <span 
+            [ngStyle]="{ color: 'red'}" 
+            (click)="onDelete(task)"
+            >X</span>
+        </b>
+    </h3>
+    <p>{{task.day}}</p>
+</div>
